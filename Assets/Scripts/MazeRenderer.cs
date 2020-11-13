@@ -13,10 +13,13 @@ public class MazeRenderer : MonoBehaviour
     private int height = 10;
 
     [SerializeField]
+    private float size = 1f;
+
+    [SerializeField]
     private Transform wallPrefab = null;
 
     [SerializeField]
-    private float size = 1f;
+    private Transform floorPrefab = null;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +30,10 @@ public class MazeRenderer : MonoBehaviour
 
     private void Draw(WallState[,] maze)
     {
+
+        var floor = Instantiate(floorPrefab, transform);
+        floor.localScale = new Vector3(width, 1, height);
+
         for(int i = 0; i < width; ++i) {
             for (int j = 0; j < height; ++j) {
                 var cell = maze[i, j];
