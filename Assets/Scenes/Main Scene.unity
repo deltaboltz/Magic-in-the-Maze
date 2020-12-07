@@ -462,7 +462,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.1
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -509,7 +509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1608338576}
-  distance: 0.5
+  distance: 0
   sensitivity: 50
 --- !u!4 &1608338576 stripped
 Transform:
@@ -524,6 +524,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1078148757}
     m_Modifications:
+    - target: {fileID: 2573877700536488799, guid: a84e11ee423eace4aac65d32b52ee82f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2573877700867721428, guid: a84e11ee423eace4aac65d32b52ee82f,
+        type: 3}
+      propertyPath: contactOffset
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 2573877700867721430, guid: a84e11ee423eace4aac65d32b52ee82f,
         type: 3}
       propertyPath: height
@@ -547,7 +557,7 @@ PrefabInstance:
     - target: {fileID: 2573877700867721432, guid: a84e11ee423eace4aac65d32b52ee82f,
         type: 3}
       propertyPath: moveSpeed
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2573877700867721432, guid: a84e11ee423eace4aac65d32b52ee82f,
         type: 3}
@@ -587,7 +597,7 @@ PrefabInstance:
     - target: {fileID: 2573877700867721439, guid: a84e11ee423eace4aac65d32b52ee82f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2573877700867721439, guid: a84e11ee423eace4aac65d32b52ee82f,
         type: 3}
